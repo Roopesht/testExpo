@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "Run Android",
+            "hide": false,
+            "type": "shell",
+            "windows": {
+                "command": "cmd.exe",
+                "args": [
+                    "/k",
+                    "cd src\\app && npm install && npx expo start --android",
+                ],
+                "options": {
+                    "cwd": "${workspaceFolder}"
+                }
+            }
+        }
+
+	]
+}
